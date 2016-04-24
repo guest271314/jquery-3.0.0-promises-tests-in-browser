@@ -1,7 +1,7 @@
 'use strict';
 
 if (self.importScripts) {
-  self.importScripts('resources/testharness.js');
+  self.importScripts('testharness.js');
 }
 
 var a = [];
