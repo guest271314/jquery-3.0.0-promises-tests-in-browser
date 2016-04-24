@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<script src="resources/jquery-3.0.0-pre.js"></script>
+<script>
+// jquery-3.0.0-promises-tests-in-browser version 1.0 2016-04-23 guest271314 
+// test jQuery-3x Promise implementation 
+// utilizing and adapting files 
+// at https://github.com/WebKit/webkit/tree/master/LayoutTests/js/promises-tests
+// and parent directories; https://github.com/promises-aplus/promises-tests
+$(document).ready(function() {
+    $("title, h3").html("jQuery version " + jQuery().jquery + " Promises/A+ Compliance Tests");
+    var tests = ["promises-tests-2-1-2.html", "promises-tests-2-1-3.html", "promises-tests-2-2-1.html", "promises-tests-2-2-2.html", "promises-tests-2-2-3.html", "promises-tests-2-2-4.html", "promises-tests-2-2-5.html", "promises-tests-2-2-6.html", "promises-tests-2-2-7.html", "promises-tests-2-3-1.html", "promises-tests-2-3-2.html", "promises-tests-2-3-3.html", "promises-tests-2-3-4.html", "Promise-types.html" /* , "promises-in-workers.html" */ ];
+    $.each(tests, function(index, test) {
+        $("<iframe>", {
+            width: "100%"
+        })
+        .on("load", function(e) {
+            setTimeout(function() {
+                e.target.height = e.target.contentWindow.document.body.scrollHeight * 1.1 + "px";
+            }, 1000 * (1.25 + index));
+            // if (index === tests.length - 1) {
+            //    $(e.target.contentWindow.document.body)
+            //    .prepend("<span style='font-family:Times New Roman'>Promises in Workers Test</span>")
+            // }
+        })
+        .attr("src", test)
+        .appendTo("body")
+    })
+});
+</script>
+</head>
+<body>
+<h3></h3>
+</body>
+</html>
