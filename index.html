@@ -5,6 +5,7 @@
 <script src="resources/jquery-3.0.0-pre.js"></script>
 <script>
 // jquery-3.0.0-promises-tests-in-browser version 1.0 2016-04-23 guest271314 
+// https://github.com/guest271314/jquery-3.0.0-promises-tests-in-browser/blob/master/index.html
 // test jQuery-3x Promise implementation 
 // utilizing and adapting files 
 // at https://github.com/WebKit/webkit/tree/master/LayoutTests/js/promises-tests
@@ -19,7 +20,7 @@ $(document).ready(function() {
         .on("load", function(e) {
             setTimeout(function() {
                 e.target.height = e.target.contentWindow.document.body.scrollHeight * 1.1 + "px";
-            }, 1000 * (1.25 + index));
+            }, 1500 * (1 + index));
             // if (index === tests.length - 1) {
             //    $(e.target.contentWindow.document.body)
             //    .prepend("<span style='font-family:Times New Roman'>Promises in Workers Test</span>")
