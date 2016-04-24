@@ -1,6 +1,6 @@
 {
   "name": "jQuery-3.0.0-promises-tests-in-browser",
   "tagline": "jquery-3.0.0-promises-tests-in-browser",
-  "body": "# jquery-3.0.0-promises-tests-in-browser\r\njquery-3.0.0-promises-tests-in-browser\r\n\r\nTest jQuery-3x Promise implementation utilizing, adjusting files at https://github.com/WebKit/webkit/tree/master/LayoutTests/js/promises-tests\r\nand parent directories\r\n``",
+  "body": "# jquery-3.0.0-promises-tests-in-browser",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
